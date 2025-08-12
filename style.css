@@ -1,0 +1,114 @@
+/* General Reset */
+body, h1, h2, p, div, input, select, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header Styling */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: center;
+}
+
+/* Main Container */
+div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Trump Picture */
+.trump-picture img {
+  width: 150px; /* Adjusted width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Citizenship Price */
+.citizenship-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Submit Button */
+button.sumbit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px; /* Add space above the button */
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.sumbit:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  div {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .trump-picture img {
+    width: 100px; /* Adjusted for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  input[type="number"], select, button.sumbit {
+    font-size: 14px;
+  }
+}
